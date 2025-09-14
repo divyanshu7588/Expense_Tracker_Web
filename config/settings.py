@@ -22,6 +22,28 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-rkz=2whwte*(r=pjn@q-pprtaf1znic$$f*o7bt^_)v_h5r=j9'
 
+# ---------------- SECRET KEY ---------------- #
+SECRET_KEY = "superseecretkey"  # already there
+
+# ---------------- FAST2SMS API KEY ---------------- #
+FAST2SMS_API_KEY = "HvIeW90yMJbYuTEzVSGxAmfsXli745KqO36oPwQcRk8hNFpdZLoh1DpsYcRSgCzmEMA4vrkWFVxj3fiP"
+
+# ---------------- EMAIL SETTINGS ---------------- #
+
+
+# settings.py
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "jaindivyu228@gmail.com"
+EMAIL_HOST_PASSWORD = "vnbwgeszezuoytrn"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# settings.py temporarily
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
